@@ -52,7 +52,6 @@ for repo in $REPOS; do
 
     # Clone repository with all branches
     git clone "https://github.com/$GITHUB_USERNAME/$repo" -q --mirror || handle_error "Failed to clone $repo"
-    break
 done
 
 log "Repositories loaded!"
