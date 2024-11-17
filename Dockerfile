@@ -1,4 +1,4 @@
-FROM golang:1.22@sha256:829eff99a4b2abffe68f6a3847337bf6455d69d17e49ec1a97dac78834754bd6 AS kopia
+FROM golang:1.23-alpine@sha256:c694a4d291a13a9f9d94933395673494fc2cc9d4777b85df3a7e70b3492d3574 AS kopia
 
 RUN CGO_ENABLED=0 go install github.com/kopia/kopia@v0.18.0
 
